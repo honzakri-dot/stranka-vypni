@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vypni.to</title>
+  <style>
+    html,body {margin:0; padding:0; height:100%;}
+    body {display:flex; flex-direction:column; font-family:Arial, sans-serif;}
+    .pdf-container {flex:1;}
+    embed {width:100%; height:100%; border:none;}
+    .fallback {padding:1em; text-align:center; background:#f9f9f9;}
+    .fallback a {display:inline-block; margin:0.5em; padding:0.5em 1em; background:#007acc; color:#fff; text-decoration:none; border-radius:4px;}
+  </style>
+</head>
+<body>
+  <div class="pdf-container">
+    <embed src="vypnito.pdf" type="application/pdf">
+  </div>
+  <div class="fallback">
+    <p>Pokud se PDF nezobrazí, můžete si ho stáhnout zde:</p>
+    <a href="vypnito.pdf" target="_blank">Otevřít PDF</a>
+    <a href="vypnito.pdf" download>Stáhnout PDF</a>
+  </div>
+</body>
+</html>
